@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root {
+    --titulo: 'LimpNAT';
+}
+
+/*padronização*/
+
+.titles-style {
+    font-size: clamp(2em, 2em + 1vw, 3em);
+    font-family: var(--titulo);
+    letter-spacing: 0.1em;
+    color: rgb(11, 10, 10);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+   
+}
+
+body {
+    background-color: #806dee;
+      
+}
+
+a {
+    color: #faf6f6;
+    cursor: pointer;
+  }
+
+/*nav*/
+
+#container-header {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    padding-left: 1%;
+    z-index: 1;
+}
+
+
+#logo-header {
+    height: 80px;
+    width: 230px;
+    margin-top: 3px;
+}
+
+#donate-background {
+    width: 100%;
+    height: 47vh;
+}
+
+#donate-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.donate-container-card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4% 0%;
+    font-size: 1.2em;
+}
+
+.card {
+    width: 40vw;
+    background-color: #FFD557;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 3em;
+  }
+
+  .card h2{
+    text-align: center;
+  }
+  
+  .invoice-donate-text {
+    line-height: 1.5em; 
+  }
+
+.invoice-donate-text > p ~ h3, p {
+    margin-top: 2%;
+  }
+
+#invoice-donate-list li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+
+  .volunteer-work-text {
+    line-height: 1.9em;
+  }
+
+/*Area home*/
+
+#home-section {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+#home-container{
+    width: 30%;
+    height: 40%;
+    border-radius: 20px;
+    background-color: #FFD557;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5em;
+    font-size: 1.2rem;
+}
+
+#home-container h2{
+    text-align: center;
+}
+
+#home-container p:nth-child(even) {
+    margin-bottom: 1.5rem;
+}
+
+.imagem{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem img{
+    width: 40%;
+    border-radius: 30px;
+}
+
+/*footer*/
+
+.background-footer-color {
+    background-color: #232323;
+}
+
+footer {
+    color: rgb(221, 221, 221);
+}
+
+#container-footer {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container-footer h3 {
+    margin-bottom: 4px;
+}
+
+#container-footer p {
+    font-weight: 600;
+}
+
+#corretion-spacement-tel-footer {
+    margin: 5% 0%;
+}
+
+.img-and-title-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-footer-resize {
+    width: 17px;
+    height: 15px;
+    margin: 3px 8px 0px 0px;
+}
+
+.partnership-logo-resize {
+    height: 90px;
+    width: 185px;
+}
+
+#easter-egg {
+    cursor: auto;
+}
+
+#corretion-spacement-adress-footer {
+    line-height: 1.4;
+}
+
+#sub-footer {
+    width: 100%;
+    padding: 1% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+#about-us{ /*DIV USADA PARA SCROLL NO CLIQUE DE SOBRE NÓS NO MENU DE NAVEGAÇÃO*/
+    position: absolute;
+    bottom: 0%;
+}
+
+/*Imagem principal*/
+
+#background-main-img {
+    background-image: url("imagens/conteudo/th (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+/*Barra de navegação*/
+
+#container-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(61, 46, 140);
+    display: flex;
+    align-items: center;
+    padding-left: 1.5%;
+    z-index: 10;
+}
+
+/*Dá o espaço do tamanho da nav*/
+
+.container-space-nav-corretion {
+    width: 100%;
+    height: 85px;
+}
+
+/*Logo barra de navegação*/
+
+#logo-header {
+    height: 70px;
+    width: 150px;
+}
+
+/*Menu para responsividade*/
+
+.hamburger-menu {
+    margin-right: 4%;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(7, 1, 1);
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.side-bar {
+    top: 0;
+    right: -20rem;
+    position: fixed;
+    height: 100vh;
+    width: 20rem;
+    background-color: #000000;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.side-bar ul li {
+    margin: 4rem 0rem;
+}
+
+.show-menu {
+    right: 0;
+    transition: all 0.4s;
+}
+
+.hamburger-transition div:nth-child(1) {
+    transform: translate(0, 9px) rotate(-45deg);
+    transition: 0.3s;
+}
+
+.hamburger-transition div:nth-child(2) {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.hamburger-transition div:nth-child(3) {
+    transform: translate(0, -11px) rotate(45deg);
+    transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .side-bar {
+        position: fixed;
+    }
+
+    #header-nav nav ul li {
+        display: none;
+    }
+
+    #header-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/*Posicionamento da nav*/
+
+#header-nav {
+    width: 100%;
+    margin-left: 4%;
+}
+
+#header-nav a {
+    transition: 0.3s;
+}
+
+#header-nav a:hover {
+    color: #ffca1c;
+    transition: 0.2s;
+}
+
+#header-nav nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#header-nav li {
+    font-size: 18px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    padding: 2.5%;
+}
+
+#header-nav li:nth-last-child(1) a {
+    border: 1.5px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+#header-nav li:nth-last-child(1) a:hover {
+    padding: 16px;
+}
+
+
+
+
+img {
+    object-fit: cover;
+    height: 510px;
+    width: 620px;
+    border-radius: 20px;
+    
+}
+
+
